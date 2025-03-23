@@ -1,0 +1,91 @@
+<html>
+
+<head>
+    <title>Name Gen</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-size: 44px;
+        }
+
+        body {
+            color: white;
+            margin-top: 20vh;
+            gap: 20px;
+            font-family: "Arial Rounded MT";
+            background-color: rgb(64, 64, 64);
+        }
+
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .fcol {
+            flex-direction: column;
+        }
+
+        .main {
+            padding: 20px;
+        }
+
+        .border {
+            border: 1px solid aqua
+        }
+
+        .Result {
+            /* border: 2px solid gray; */
+            color: white;
+            text-shadow: 2px 0px black,
+            0px -2px black;
+            font-family: "Viner Hand ITC";
+            border-radius: 80px;
+            padding: 10px 40px;
+            background-color: rgba(255, 255, 255, 0.5);
+
+            
+            box-shadow: 
+            2px 2px 8px black,
+            -2px -2px 8px -4px white,
+            inset 2px 2px 8px -4px white,
+            inset -2px -2px 8px black;
+
+        }
+
+        .btn {
+            font-family: inherit;
+            border: none;
+            background-color: gray;
+            border-radius: 16px;
+            padding: 10px;
+            font-size: smaller;
+            opacity: 60%;
+            transition: 0.16s ease-in;
+        }
+
+        .btn:hover {
+            opacity: 100%;
+            cursor: pointer;
+            background-color: white;
+            color: black;
+            font-weight: 600;
+            letter-spacing: 2px;
+            box-shadow: 0 0 8px white;
+            transition: 0.16s ease-out;
+        }
+    </style>
+</head>
+
+<body class="center fcol">
+    <h1>Random Business Name: </h1>
+    <div class="main center fcol">
+        <div class="Result center"><!-- CSS + JS --></div>
+    </div>
+    <button class="btn center">Other</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
